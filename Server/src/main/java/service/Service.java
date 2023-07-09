@@ -67,6 +67,7 @@ public class Service implements IServices {
         } else{
             throw new ServiceException("User not logged in");
         }
+
     }
 
     @Override
@@ -81,9 +82,9 @@ public class Service implements IServices {
             List<Long> clientsForThisGame = new ArrayList<>();
             for (var client : waitingClients.entrySet()) {
                 clientsForThisGame.add(client.getKey());
-                if (clientsForThisGame.size() == noOfPlayersInAGame) {
-                    break;
-                }
+//                if (clientsForThisGame.size() == noOfPlayersInAGame) {
+//                    break;
+//                }
             }
 
             // create game
@@ -98,9 +99,10 @@ public class Service implements IServices {
                 } catch (RepositoryException e) {
                     e.printStackTrace();
                 }
-                waitingClients.remove(clientId);
+                //waitingClients.remove(clientId);
                 playingClients.put(clientId, game.getId());
             }
+            waitingClients.clear();
 
             // notify clients
             ExecutorService executor = Executors.newFixedThreadPool(defaultThreadsNo);

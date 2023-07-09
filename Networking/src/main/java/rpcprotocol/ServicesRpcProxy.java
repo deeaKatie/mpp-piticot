@@ -186,7 +186,7 @@ public class ServicesRpcProxy implements IServices {
 
     @Override
     public Boolean startGame(StartGameDTO startGameDTO) throws ServiceException {
-        System.out.println("PROXY -> getData");
+        System.out.println("PROXY -> startGame");
         Request req = (new Request.Builder()).type(RequestType.START_GAME).data(startGameDTO).build();
         sendRequest(req);
         Response response = readResponse();

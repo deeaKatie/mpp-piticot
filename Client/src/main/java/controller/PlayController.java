@@ -92,6 +92,7 @@ public class PlayController implements IObserver {
     }
 
     public void init_StartScreen() {
+        usernameLabel.setText("Hi, " + loggedUser.getUsername());
         statusLabel.setVisible(true);
         statusLabel.setText("Click Button to Start!");
         leftListView.setVisible(false);
