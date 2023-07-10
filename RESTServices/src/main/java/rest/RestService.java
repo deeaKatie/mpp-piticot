@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import repository.IUserRepository;
 import repository.UserDBRepository;
 
 import java.util.ArrayList;
@@ -18,7 +19,8 @@ import java.util.List;
 public class RestService {
 
     @Autowired
-    private UserDBRepository userDBRepository;
+    private IUserRepository userDBRepository;
+
 
     @GetMapping("/{id}")
     private ResponseEntity<?> get(@PathVariable Long id) {
