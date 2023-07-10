@@ -140,7 +140,7 @@ public class ClientRpcReflectionWorker implements Runnable, IObserver {
         }
     }
 
-    private Response handleMAKE_ACTION(Request request) {
+    private Response handleMADE_ACTION(Request request) {
         System.out.println("WORKER ->" + request.type());
         ActionDTO actionDTO = (ActionDTO) request.data();
 
@@ -175,8 +175,19 @@ public class ClientRpcReflectionWorker implements Runnable, IObserver {
     }
 
     @Override
+    public void yourTurn() {
+        System.out.println("WORKER -> Sending YOUR_TURN");
+        Response response = new Response.Builder().type(ResponseType.YOUR_TURN).build();
+        try {
+            sendResponse(response);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
     public void gameEndedWon(GameDTO gameDTO) {
-        System.out.println("WORKER -> Sending GAME_ENDED");
+        System.out.println("WORKER -> Sending GAME_ENDED_WIN");
         try {
             Response response = new Response.Builder().type(ResponseType.GAME_END_WIN).data(gameDTO).build();
             sendResponse(response);
@@ -187,7 +198,7 @@ public class ClientRpcReflectionWorker implements Runnable, IObserver {
 
     @Override
     public void gameEndedLost(GameDTO gameDTO) {
-        System.out.println("WORKER -> Sending GAME_ENDED");
+        System.out.println("WORKER -> Sending GAME_ENDED_LOSE");
         try {
             Response response = new Response.Builder().type(ResponseType.GAME_END_LOSE).data(gameDTO).build();
             sendResponse(response);

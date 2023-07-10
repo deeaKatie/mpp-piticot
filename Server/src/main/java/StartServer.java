@@ -36,13 +36,16 @@ public class StartServer {
         // Initialize repositories
         IUserRepository userRepository = new UserDBRepository();
         IGameDBRepository gameDBRepository = new GameDBRepository();
-
+        IMoveRepository positionRepository = new MoveDBRepository();
+        IConfigurationRepository configurationRepository = new ConfigurationDBRepository();
+        IPlayerMovesRepository playerPositionsRepository = new PlayerMovesDBRepository();
         // Add / Show data
         //addData(userRepository);
         showData(userRepository);
 
         // Initialize service
-        IServices service=new Service(userRepository, gameDBRepository);
+        IServices service=new Service(userRepository, gameDBRepository, positionRepository,
+                configurationRepository, playerPositionsRepository);
 
         // Start server
         System.out.println("Starting server on port: " + serverPort);

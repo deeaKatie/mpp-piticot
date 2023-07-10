@@ -2,20 +2,16 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PlayController">
    <children>
       <Label fx:id="usernameLabel" layoutX="14.0" layoutY="14.0" prefHeight="18.0" prefWidth="236.0" text="Hi, " />
-      <Label fx:id="statusLabel" layoutX="263.0" layoutY="53.0" prefHeight="18.0" prefWidth="278.0" text="You won!" />
-      <ListView fx:id="leftListView" layoutX="45.0" layoutY="155.0" prefHeight="200.0" prefWidth="200.0" />
-      <Label fx:id="leftLabel" layoutX="117.0" layoutY="95.0" text="Data" />
-      <Label fx:id="rightLabel" layoutX="404.0" layoutY="95.0" text="Your data" />
+      <Label fx:id="statusLabel" layoutX="192.0" layoutY="98.0" prefHeight="18.0" prefWidth="278.0" text="You won!" />
       <Button fx:id="logOutButton" layoutX="534.0" layoutY="11.0" mnemonicParsing="false" onAction="#logOutHandler" text="Log out" />
-      <Button fx:id="makeActionButton" layoutX="390.0" layoutY="330.0" mnemonicParsing="false" onAction="#makeAction" text="Make action" />
-      <Button fx:id="startGameButton"  onAction="#startGame" layoutX="263.0" layoutY="243.0" mnemonicParsing="false" text="Start game" />
-      <TextField fx:id="gameInitDataTextField" layoutX="226.0" layoutY="188.0" />
+      <Button fx:id="makeActionButton" layoutX="269.0" layoutY="238.0" mnemonicParsing="false" onAction="#makeAction" text="Roll dice" />
+      <Button fx:id="startGameButton" layoutX="263.0" layoutY="200.0" mnemonicParsing="false" onAction="#startGame" text="Start game" />
+      <Label fx:id="gameConfigLabel" layoutX="260.0" layoutY="167.0" text="_ _ _ C D _ X _ _" />
+      <Label fx:id="otherPlayerLabel" layoutX="14.0" layoutY="51.0" text="Other player, " />
    </children>
 </AnchorPane>

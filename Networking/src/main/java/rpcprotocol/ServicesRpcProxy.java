@@ -120,6 +120,7 @@ public class ServicesRpcProxy implements IServices {
     private boolean isUpdate(Response response) {
         return response.type() == ResponseType.UPDATE_DATA ||
                 response.type() == ResponseType.GAME_STARTED ||
+                response.type() == ResponseType.YOUR_TURN ||
                 response.type() == ResponseType.GAME_END_LOSE ||
                 response.type() == ResponseType.GAME_END_WIN;
     }
@@ -137,11 +138,15 @@ public class ServicesRpcProxy implements IServices {
         }
 
         else if (response.type() == ResponseType.GAME_END_LOSE) {
-            client.gameEndedWon((GameDTO) response.data());
+            client.gameEndedLost((GameDTO) response.data());
         }
 
         else if (response.type() == ResponseType.GAME_END_WIN) {
-            client.gameEndedLost((GameDTO) response.data());
+            client.gameEndedWon((GameDTO) response.data());
+        }
+
+        else if (response.type() == ResponseType.YOUR_TURN) {
+            client.yourTurn();
         }
     }
 

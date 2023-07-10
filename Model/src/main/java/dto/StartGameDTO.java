@@ -3,6 +3,7 @@ package dto;
 import model.HasId;
 import model.User;
 
+// what user sends before clicking start game
 public class StartGameDTO implements HasId<Long> {
 
     private User user;
