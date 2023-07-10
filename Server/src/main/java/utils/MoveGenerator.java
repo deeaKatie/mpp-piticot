@@ -72,7 +72,8 @@ public class MoveGenerator {
                 // move backwards
                 System.out.println("MOVE -> X found at " + newPosition + " moving backwards");
                 //remove me first from board then find empty pos
-                removePlayerFromBoard(oldPosition, playerNumber);
+                if (oldPosition != -1)
+                    removePlayerFromBoard(oldPosition, playerNumber);
                 newPosition = findEmptyPosition(newPosition);
 
                  if (newPosition != -1)  {

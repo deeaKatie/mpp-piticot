@@ -5,36 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccfa7e6b-654c-463b-a268-93519fa570db" name="Changes" comment="base app">
-      <change afterPath="$PROJECT_DIR$/Model/src/main/java/model/Configuration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Model/src/main/java/model/Move.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Model/src/main/java/model/PlayerMoves.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Persistance/src/main/java/repository/ConfigurationDBRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Persistance/src/main/java/repository/IConfigurationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Persistance/src/main/java/repository/IMoveRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Persistance/src/main/java/repository/IPlayerMovesRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Persistance/src/main/java/repository/MoveDBRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Persistance/src/main/java/repository/PlayerMovesDBRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/main/java/utils/MoveGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/src/main/java/controller/PlayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/controller/PlayController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/src/main/resources/MainScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/resources/MainScreen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/main/java/dto/ActionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/java/dto/ActionDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/main/java/dto/GameDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/java/dto/GameDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/main/java/dto/StartGameDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/java/dto/StartGameDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/main/java/dto/UpdateDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/java/dto/UpdateDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/main/java/model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/java/model/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/src/main/java/model/ModelTemplate" beforeDir="false" afterPath="$PROJECT_DIR$/Model/src/main/java/model/ModelTemplate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Networking/src/main/java/rpcprotocol/ClientRpcReflectionWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/Networking/src/main/java/rpcprotocol/ClientRpcReflectionWorker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Networking/src/main/java/rpcprotocol/ResponseType.java" beforeDir="false" afterPath="$PROJECT_DIR$/Networking/src/main/java/rpcprotocol/ResponseType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Networking/src/main/java/rpcprotocol/ServicesRpcProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Networking/src/main/java/rpcprotocol/ServicesRpcProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Persistance/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Persistance/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Persistance/src/main/resources/log4j2.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/Database.db" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/StartServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/StartServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/service/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/service/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/src/main/java/services/IObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/Services/src/main/java/services/IObserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/utils/MoveGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/utils/MoveGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,7 +210,6 @@
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
     <configuration name="rezolvare_razboi:Client [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -259,7 +231,6 @@
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
     <configuration name="rezolvare_razboi:Server [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -281,7 +252,6 @@
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
@@ -321,6 +291,7 @@
       <workItem from="1688907644575" duration="13620000" />
       <workItem from="1688933723788" duration="592000" />
       <workItem from="1688982774097" duration="28890000" />
+      <workItem from="1689021787220" duration="178000" />
     </task>
     <task id="LOCAL-00001" summary="first working version, w/ log in &amp; showing users">
       <created>1688574514383</created>
